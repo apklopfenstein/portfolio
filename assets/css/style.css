@@ -7,6 +7,7 @@
 
 body {
     font-size: 20px;
+    color: #292929;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,6 +54,8 @@ header nav li {
 
 main {
     padding-top: 40px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 main section {
@@ -64,10 +67,48 @@ main section {
 main section h2 {
     font-size: 2.5em;
     width: 300px;
-    text-align: right;
+    /* text-align: right; */
     margin-right: 60px;
+    flex-shrink: 0;
+}
+
+main section p {
+    margin-bottom: 1.4em;
+    line-height: 1.4em;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 80%;
+    gap: 20px 20px;
+}
+
+.projects a {
+    width: 200px; 
+    height: 200px;
+}
+
+.run-buddy {
+    background-image: url(../images/projects/run-buddy.png);
+    background-size: cover;
+}
+
+.projects a.showcase {
+    grid-row: span 2;
+    grid-column: span 2;
+    height: 100%;
+    width: 100%;
 }
 
 #contact-me ul {
     list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#contact-me li {
+    margin-right: 50px;
+    
 }
