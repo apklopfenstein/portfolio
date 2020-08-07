@@ -83,11 +83,36 @@ main section p {
     grid-template-rows: repeat(3, 1fr);
     width: 80%;
     gap: 20px 20px;
+    
 }
 
 .projects a {
-    width: 200px; 
     height: 200px;
+    border: 1px solid #666;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    padding: 7px 7px 7px 28px;
+    background-color: #666;
+    color: #FFFFFF;
+    font-size: 0.75em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.label h3 {
+    color: #FFFFFF;
+    font-size: 1.75em;
+}
+
+.label p {
+    margin-bottom: 0;
 }
 
 .run-buddy {
@@ -99,7 +124,6 @@ main section p {
     grid-row: span 2;
     grid-column: span 2;
     height: 100%;
-    width: 100%;
 }
 
 #contact-me ul {
