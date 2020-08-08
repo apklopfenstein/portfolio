@@ -28,7 +28,7 @@ header, footer{
     height: 299px;
     display: flex;
     align-items: baseline;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
 header h1 {
@@ -52,6 +52,14 @@ header nav li {
     margin-left: 50px;
 }
 
+header nav a {
+    font-size: 1.4em;
+}
+
+header nav li a:hover, #contact-me a:hover {
+    text-decoration: underline #b53c4a;
+}
+
 main {
     padding-top: 40px;
     max-width: 90%;
@@ -67,7 +75,6 @@ main section {
 main section h2 {
     font-size: 2.5em;
     width: 300px;
-    /* text-align: right; */
     margin-right: 60px;
     flex-shrink: 0;
 }
@@ -75,6 +82,13 @@ main section h2 {
 main section p {
     margin-bottom: 1.4em;
     line-height: 1.4em;
+}
+
+#about-me img {
+    height: 200px;
+    border: 1px solid #666;
+    border-radius: 20px;
+    margin-left: 40px;
 }
 
 .projects {
