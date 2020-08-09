@@ -1,3 +1,4 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-weight: 300;
 }
 
+/* BEGIN: base styles */
 body {
     font-size: 20px;
     color: #292929;
@@ -20,7 +22,9 @@ a {
     text-decoration: none;
     color: #fb6d7d;
 }
+/* END: base styles */
 
+/* common styles for watercolor in header and footer */
 header, footer{
     background-image: url("../images/header-bg.jpg");
     background-size: cover;
@@ -31,6 +35,7 @@ header, footer{
     padding: 0 50px;
 }
 
+/* BEGIN: header styles */
 header h1 {
     font-size: 4em;
     margin-top: auto;
@@ -63,7 +68,9 @@ header nav a {
 header nav li a:hover, #contact-me a:hover {
     text-decoration: underline #b53c4a;
 }
+/* END: header styles */
 
+/* BEGIN: common main styles */
 main {
     padding-top: 40px;
     max-width: 90%;
@@ -82,8 +89,10 @@ main section h2 {
     margin-right: 60px;
     flex-shrink: 0;
 }
+/* END: common main styles */
 
-main section p {
+/* BEGIN: about me styles */
+#about-me p {
     margin-bottom: 1.4em;
     line-height: 1.4em;
 }
@@ -94,7 +103,9 @@ main section p {
     border-radius: 20px;
     margin-left: 40px;
 }
+/* END: about me styles */
 
+/* BEGIN: grid styles */
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -151,7 +162,9 @@ main section p {
     grid-column: span 2;
     height: 100%;
 }
+/* END: grid styles */
 
+/* BEGIN: footer styles */
 footer {
     transform: rotate(180deg);
     position: relative;
@@ -163,9 +176,10 @@ footer {
     top: 75px;
     right: 50%;
 }
+/* END: footer styles */
 
+/* break point to avoid header h1 and nav collision */
 @media screen and (max-width: 1360px) {
-
     header {
         flex-direction: column;
         align-items: center;
@@ -180,8 +194,8 @@ footer {
     }
 }
 
+/* break point for tablet size */
 @media screen and (max-width: 900px) {
-
     main section {
         flex-direction: column;
         align-items: center;
@@ -189,21 +203,21 @@ footer {
 
     main section h2{
         width: auto;
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     #about-me img {
         order: -1;
-        margin: 0px 0px 50px 0px;
+        margin: 0 0 50px 0;
     }
 }
 
+/* break point for phone size */
 @media screen and (max-width: 675px) {
-
     html, body{
         width:100%;
         overflow-x:hidden;
-        } 
+    } 
 
     header {
         align-items: center;
