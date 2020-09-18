@@ -157,6 +157,11 @@ main section h2 {
     background-size: cover;
 }
 
+.projects .stargazr {
+    background-image: url(../images/projects/stargazr.jpg);
+    background-size: cover;
+}
+
 .projects a.showcase {
     grid-row: span 2;
     grid-column: span 2;
