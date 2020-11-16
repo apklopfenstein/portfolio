@@ -162,6 +162,11 @@ main section h2 {
     background-size: cover;
 }
 
+.projects .mixer {
+    background-image: url(../images/projects/mixer.jpg);
+    background-size: cover;
+}
+
 .projects a.showcase {
     grid-row: span 2;
     grid-column: span 2;
